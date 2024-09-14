@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./mixin";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 5%;
+  border-bottom: 1px solid #CBD5E1;
+
+  // background-color: red;
+
+  .nav_links {
+    display: none;
+  }
+}
+
+@include lg{
+  .navbar {
+    padding: 1.5% 5%;
+
+    .hamburger {
+      display: none;
+    }
+
+    .nav_links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 35%;
+
+      .nav_link {
+        margin: 0 1%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #64748b;
+      }
+
+      .nav_btn {
+        background: linear-gradient(0deg, #1353dd, #1353dd),
+          linear-gradient(93.69deg, #2d56ec -14.13%, #1aacea 120.91%);
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
