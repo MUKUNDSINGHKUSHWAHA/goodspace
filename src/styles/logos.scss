@@ -1,0 +1,41 @@
+@import "./variables";
+@import "./mixin";
+
+.logo_container {
+  text-align: center;
+  margin: 12% 0;
+  text-align: center;
+
+  p {
+    letter-spacing: 2px;
+    /* font-size: 14px; */
+    /* font-size: 14px; */
+    color: var(--400, #94a3b8);
+  }
+  .img_container {
+    margin: 4% 0;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      margin: 0 3%;
+    }
+  }
+
+  @include lg {
+    padding: 32px 64px 40px 64px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    .img_container {
+        margin-bottom: 0;
+    }
+  }
+}
