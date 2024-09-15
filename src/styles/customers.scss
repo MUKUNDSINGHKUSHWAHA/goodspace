@@ -1,9 +1,9 @@
 @import "./variables";
 @import "./mixin";
 
-.integrations_container {
+.customers_containers {
+  display: none;
   padding: 12% 3%;
-  background: #e3f0f9;
 
   h3 {
     background: linear-gradient(90.16deg, #355ded 0.21%, #6f33f0 100.08%),
@@ -14,10 +14,6 @@
     text-align: center;
     margin: 15%;
     margin-bottom: 10%;
-  }
-
-  .lines {
-    display: none;
   }
 
   .cards_container {
@@ -45,6 +41,12 @@
           font-size: 20px;
           font-weight: 600;
         }
+
+        .position {
+          color: var(--500, #64748b);
+          font-size: 14px;
+          font-weight: 400;
+        }
       }
 
       .content {
@@ -53,47 +55,29 @@
       }
     }
 
-    .yellow_card {
-      border: 1px solid rgb(252 180 40 / 14%);
-      background: linear-gradient(
-        180deg,
-        rgb(252 129 40 / 0%) 0%,
-        rgb(252 180 40 / 14%) 100%
-      );
+    .first_card {
+      border: 1px solid #365eee4d;
+      background: #365eee1a;
     }
 
-    .green_card {
-      border: 1px solid rgba(187, 225, 33, 0.5);
-
-      background: linear-gradient(
-        180deg,
-        rgb(108 184 32 / 9%) 0%,
-        rgb(187 225 33 / 27%) 100%
-      );
+    .second_card {
+      background: #1aacea1a;
+      border: 1px solid #1aacea4d;
     }
 
-    .blue_card {
-      border: 1px solid rgba(29, 161, 235, 0.5);
-      background: linear-gradient(
-        180deg,
-        rgb(45 88 236 / 13%) 0%,
-        rgb(29 161 235 / 25%) 100%
-      );
+    .third_card {
+      background: #2480eb1a;
+      border: 1px solid #2480eb4d;
     }
   }
 
   @include lg {
+    display: block;
     padding: 1% 3%;
-    padding-bottom: 7%;
     h3 {
       margin: 6%;
-      margin-bottom: 0;
+      margin-bottom: 5%;
       font-size: 40px;
-    }
-    .lines {
-      display: block;
-      width: max-content;
-      margin: 0 auto;
     }
 
     .cards_container {
@@ -101,6 +85,14 @@
 
       .card {
         margin: 0 1%;
+
+        .title_container {
+          margin: 6% 0;
+
+          .title{
+            margin-bottom: 5%;
+          }
+        }
       }
     }
   }

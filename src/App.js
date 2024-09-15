@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar.jsx";
 import './styles/global.scss'
 import Needs from "./components/Needs.jsx";
 import Integrations from "./components/Integrations.jsx";
+import Customers from "./components/Customers.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Logos/>
       <Needs/>
       <Integrations/>
+      <Customers/>
     </>
   );
 }
