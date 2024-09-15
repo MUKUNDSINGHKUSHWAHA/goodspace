@@ -6,6 +6,7 @@ import Logos from "./components/Logos.jsx";
 import Navbar from "./components/Navbar.jsx";
 import './styles/global.scss'
 import Needs from "./components/Needs.jsx";
+import Integrations from "./components/Integrations.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HeroSection/>
       <Logos/>
       <Needs/>
+      <Integrations/>
     </>
   );
 }
