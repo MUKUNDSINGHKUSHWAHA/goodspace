@@ -16,10 +16,10 @@ const HeroSection = () => {
       <div className="hero_form">
         <form>
           <div>
-            <input placeholder="Name" />
+            <input className="name_input" type="text" placeholder="Name" />
           </div>
           <div>
-            <input placeholder="Official email ID" />
+            <input className="email_input" type="email" placeholder="Official email ID" />
           </div>
           <div>
             <button type="submit">Start trial</button>

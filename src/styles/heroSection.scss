@@ -37,6 +37,8 @@
         height: 44px;
         font-size: 15px;
         border: 1px solid var(--300, #cbd5e1);
+        background: var(--100, #F1F5F9);
+
       }
 
       button {
@@ -94,13 +96,13 @@
         flex-direction: row;
         gap: 8px;
 
-        input:first-child {
+        .name_input {
           width: 200px;
         }
 
-        input {
+        .email_input{
           width: 352px;
-        }
+        }       
 
         button {
           width: 112px;
