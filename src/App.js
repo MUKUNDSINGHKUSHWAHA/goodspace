@@ -8,6 +8,7 @@ import './styles/global.scss'
 import Needs from "./components/Needs.jsx";
 import Integrations from "./components/Integrations.jsx";
 import Customers from "./components/Customers.jsx";
+import Expenses from "./components/Expenses.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Needs/>
       <Integrations/>
       <Customers/>
+      <Expenses/>
     </>
   );
 }
